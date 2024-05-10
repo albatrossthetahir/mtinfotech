@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --primary-bg-color:linear-gradient(90deg, #0C82EA 0%, #0B64B3 40%, #0C82EA 99.48%);
+}
+
+body{
+  background-color: #111;
+  padding: 24px 40px;
+  font-family: "Inter", sans-serif;
+}
+
+
+@media(min-width: 1200px){
+  .container{
+    max-width: 1140px;
+  }
+}
