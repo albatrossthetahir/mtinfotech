@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function header() {
+export default function Header() {
     const navLinks = [
         { name: "Home", link: "/" },
         { name: "About me", link: "/" },
