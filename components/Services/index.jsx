@@ -1,7 +1,4 @@
 'use client';
-import Image from "next/image";
-import Title from "../Headings/index";
-
 const products = [
     {
         id: 1,

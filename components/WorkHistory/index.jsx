@@ -1,5 +1,7 @@
 'use client';
 
+import Image from "next/image";
+
 export default function Workhistory() {
   return (
     <div className="lg:pb-28 2xl:pb-36">
@@ -33,7 +35,7 @@ export default function Workhistory() {
                     </div>
                 </div>
                 <div className="rounded-3xl overflow-hidden">
-                    <img src="/history-work.jpg" className="max-w-full h-auto" />
+                    <Image src="/history-work.jpg" width={600} height={600} className="max-w-full h-auto" />
                 </div>
             </div>
         </div>

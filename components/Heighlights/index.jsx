@@ -58,7 +58,7 @@ export default function heighlights() {
                             </h4>
                             <div className="flex flex-wrap pt-8 border-t border-t-[rgba(255,255,255,0.06)]">
                                 <div className="w-14 h-14 rounded-full bg-white flex-shrink-0 me-4">
-                                    <img src="" alt="" />
+                                    <Image src="/heighlights.svg" width={100} height={100} alt="David Gutta" />
                                 </div>
                                 <div className="flex-grow">
                                     <h6 className="text-white text-lg font-bold">David Gutta</h6>

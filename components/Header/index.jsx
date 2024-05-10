@@ -24,7 +24,7 @@ export default function header() {
                 <nav className="flex items-center justify-between">
                     {/* Logo */}
                     <Link href={'/'} className="text-xl font-bold">
-                        <img src="https://flowbite.com/docs/images/logo.svg" className="max-w-full" alt="Logo" />
+                        <Image src="https://flowbite.com/docs/images/logo.svg" width={50} height={52} className="max-w-full" alt="Logo" />
                     </Link>
 
                     {/* Menu Items */}

@@ -11,7 +11,7 @@ export default function header() {
                     <div className="max-w-[450px] w-full">
                         <div className="pt-28 px-10 pb-12 relative shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] text-center rounded-2xl">
                             <div className="w-32 h-32 overflow-hidden absolute -top-1/4 bottom-auto left-[36%] rounded-full bg-white mx-auto">
-                                <img src="tahir-pic.jpg" alt="tahir image" />
+                                <Image src="/tahir-pic.jpg" width={150} height={150} alt="tahir image" />
                             </div>
                             <h3 className="text-4xl text-white mb-4 font-medium">K. Tahir</h3>
                             <p className="text-xl leading-8 text-white">I believe in the power of design to transform ideas into tangible, user-friendly software.</p>
