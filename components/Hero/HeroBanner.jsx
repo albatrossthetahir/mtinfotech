@@ -1,7 +1,6 @@
-'use client';
-import Image from "next/image";
+import React from 'react'
 
-export default function heroBanner() {
+const HeroBanner = () => {
   return (
     <section className="w-full mt-6">
       <div className="grid lg:grid-cols-2 gap-3 sm:gap-5 lg:gap-6">
@@ -14,5 +13,7 @@ export default function heroBanner() {
         </div>
       </div>
     </section>
-  );
+  )
 }
+
+export default HeroBanner

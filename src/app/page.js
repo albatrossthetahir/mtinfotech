@@ -1,22 +1,24 @@
-import Hero from "../../components/Hero/index.jsx";
+
 import Header from "../../components/Header/index.jsx";
+import HeroBanner from "../../components/Hero/HeroBanner.jsx";
 import Social from "../../components/Social/index.jsx";
 import Services from "../../components/Services/index.jsx";
-import Heightlihts from "../../components/Heighlights/index.jsx"
-import Footer from "../../components/Footer/index.jsx"
+import Heighlights from "../../components/Heighlights/Heighlights.jsx";
+import WorkHistory from "../../components/WorkHistory/WorkHistory.jsx";
 import Faq from "../../components/FAQ/index.jsx";
-import Workhistory from "../../components/WorkHistory/index.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
 
-export default function Home() {
+
+export default function Home({id}) {
   return (
     <main>
-      <Header optionalLink={'Contact Me'} />
-      <Hero/>
-      <Social/>
+      <Header optionalLink={'Contact Me'} id={'header'} />
+      <HeroBanner />
+      <Social />
       <Services/>
-      <Heightlihts/>
-      <Workhistory/>
-      <Faq/>
+      <Heighlights  />
+      <WorkHistory />
+      <Faq />
       <Footer/>
     </main>
   );

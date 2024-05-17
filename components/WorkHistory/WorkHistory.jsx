@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 
-export default function Workhistory() {
+
+const WorkHistory = () => {
   return (
     <div className="lg:pb-28 2xl:pb-36">
         <div className="container mx-auto">
@@ -10,7 +11,7 @@ export default function Workhistory() {
                 <span className="text-[#ffca9a] text-sm block max-w-fit font-semibold px-3 py-1 rounded-md bg-[#111] shadow-[inset_0_1px_rgba(255,255,255,0.06)]">Work History</span>
                 <h2 className="text-white text-5xl font-semibold">Pioneering Web Designer excellence <span className="text-white/40">since 2021</span></h2>
             </div>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-[#1b1b1b] rounded-2xl p-10 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)]">
                     <h1 className="text-6xl">Tabs</h1>
                     <div>
@@ -35,10 +36,12 @@ export default function Workhistory() {
                     </div>
                 </div>
                 <div className="rounded-3xl overflow-hidden">
-                    <Image src="/history-work.jpg" width={600} height={600} className="max-w-full h-auto" />
+                    <Image src="/history-work.jpg" alt="History Work" width={600} height={600} className="max-w-full h-auto" />
                 </div>
             </div>
         </div>
     </div>
-  );
+  )
 }
+
+export default WorkHistory

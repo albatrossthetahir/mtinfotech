@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 
-export default function Header() {
+export default function Header({id}) {
     const navLinks = [
         { name: "Home", link: "/" },
         { name: "About me", link: "/" },
@@ -18,7 +18,7 @@ export default function Header() {
     }
 
     return (
-        <header className="w-full py-3 lg:py-5 px-8 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl">
+        <header className="w-full py-3 lg:py-5 px-8 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl" id>
             <div className="mx-auto">
                 <nav className="flex items-center justify-between">
                     {/* Logo */}
