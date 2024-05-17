@@ -1,12 +1,13 @@
 import Image from "next/image"
 import Link from "next/link"
+import CallFreeBtn from "../CommenElements/CallFreeBtn"
 
 const Heighlights = () => {
   return (
     <section className="w-full mt-6 lg:pb-28 2xl:pb-36">
         <div className="container mx-auto px-4">
-            <div className="grid grid-cols-4 place-content-center gap-6">
-                <div className="flex flex-col justify-between max-w-[280px] w-full">
+            <div className="grid md:grid-cols-4 place-content-center gap-4 md:gap-6">
+                <div className="flex flex-col gap-4 sm:max-w-[280px] w-full">
                     <div className="flex justify-center items-center py-9 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="200" height="73" viewBox="0 0 200 73" fill="none">
                             <g opacity="0.6">
@@ -48,10 +49,10 @@ const Heighlights = () => {
                         </svg>
                     </div>
                 </div>
-                <div className="col-span-2">
-                    <div className="h-full pt-10 px-12 pb-8 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl">
-                        <p className="text-2xl text-white">“We were fortunate to collaborate with Roger Hill on our latest SaaS project, and the experience was nothing short of exceptional. We highly recommend Roger Hill as a talented SaaS product designer."</p>
-                        <h4 className="text-6xl text-[#7e43fb] font-medium mb-7 mt-7" > 
+                <div className="md:col-span-2">
+                    <div className="h-full py-6 sm:py-8 md:pt-10 px-6 sm:px-8 md:px-12 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl">
+                        <p className="text-lg sm:text-xl lg:text-2xl text-white">“We were fortunate to collaborate with Roger Hill on our latest SaaS project, and the experience was nothing short of exceptional. We highly recommend Roger Hill as a talented SaaS product designer."</p>
+                        <h4 className="text-4xl lg:text-6xl text-[#7e43fb] font-medium mb-7 mt-7" > 
                             +230%
                             <span className="block mt-2 text-sm">INCREASE IN CONVERSION RATE</span>
                         </h4>
@@ -66,7 +67,7 @@ const Heighlights = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col justify-between max-w-[280px] w-full">
+                <div className="flex flex-col gap-4 sm:max-w-[280px] w-full">
                     <div className="flex justify-center items-center py-9 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="200" height="73" viewBox="0 0 200 73" fill="none">
                             <g opacity="0.6">
@@ -116,7 +117,7 @@ const Heighlights = () => {
                     </div>
                 </div>
                 <div className="w-full text-center col-span-full pt-10">
-                    <Link href={'/'} className="bg-white text-lg font-medium text-black py-3 pl-6 pr-11 rounded-full">Book a Free Call</Link>
+                    <CallFreeBtn/>
                 </div>
             </div>
         </div>

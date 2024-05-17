@@ -27,7 +27,7 @@ export default function Header({id}) {
                     </Link>
 
                     {/* Menu Items */}
-                    <ul className={`flex flex-col lg:flex-row fixed lg:relative top-0 left-0 lg:top-auto lg:left-auto bg-[#1b1b1b] lg:space-x-4 ml-auto w-80 z-50 h-screen lg:h-auto lg:w-auto p-8 lg:p-0 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] lg:shadow-none rounded-xl transition-all duration-300 ease-in-out ${optionalLink ? "left-0 opacity-100" : "-left-full lg:left-auto opacity-0 lg:opacity-100"}`}>
+                    <ul className={`flex flex-col lg:flex-row fixed lg:relative top-0 lg:top-auto -left-full lg:left-auto bg-[#1b1b1b] lg:space-x-4 ml-auto w-80 z-50 h-screen lg:h-auto lg:w-auto p-8 lg:p-0 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] lg:shadow-none rounded-xl transition-all duration-300 ease-in-out ${optionalLink ? "left-0 opacity-100" : "opacity-0 lg:opacity-100"}`}>
                         {
                             navLinks.map((Links) => (
                                 <li key={Links.name}>
