@@ -3,7 +3,7 @@ import CallFreeBtn from '../CommenElements/CallFreeBtn'
 
 const HeroBanner = () => {
   return (
-    <section className="w-full mt-6">
+    <section className="w-full mt-6 container mx-auto">
       <div className="grid lg:grid-cols-2 gap-3 sm:gap-5 lg:gap-6">
         <div className="shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl py-4"></div>
         <div className="text-center shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl px-4 py-14 sm:py-20 md:py-24 lg:py-32">

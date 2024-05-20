@@ -7,7 +7,7 @@ import CallFreeBtn from "../CommenElements/CallFreeBtn";
 
 const Footer = () => {
   return (
-    <footer className="mb-6">
+    <footer className="mb-6 container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-y-4 md:gap-6">
             <div className="col-span-1">
                 <div className="pt-28 px-10 pb-12 relative shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] text-center rounded-2xl">

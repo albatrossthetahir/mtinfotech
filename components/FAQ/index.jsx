@@ -9,10 +9,9 @@ export default function FAQaq() {
                 <h2 className="text-white text-6xl lg:text-[64px] text-center font-medium tracking-tight">Frequently asked <span className="inline-block text-[#ffffff66] mt-2">questions</span></h2>
             </div>
             <div className="flex flex-col gap-4 mt-14">
-                <Accordian title={'Questions 01 ?'} answer={'This is answer 01.'} />
-                <Accordian title={'Questions 02 ?'} answer={'This is answer 02.'} />
-                <Accordian title={'Questions 03 ?'} answer={'This is answer 03.'} />
-                <Accordian title={'Questions 04 ?'} answer={'This is answer 04.'} />
+                <Accordian title={'What technologies do you specialize in?'} answer={`HTML5,CSS3 (including frameworks like Tailwind, Bootstrap),JavaScript (including frameworks like Reactjs, Nextjs),Responsive design principles, andAccessibility best practices.`} />
+                <Accordian title={'What are your strengths and weaknesses as a developer?'} answer={`Highlight your strengths in areas like HTML, CSS, JavaScript, specific frameworks, or communication. Be honest about areas you're working on improving.`} />
+                <Accordian title={'What are your career goals?'} answer={'Briefly mention your aspirations in the field. Do you want to specialize in a particular area, work on large-scale projects, or freelance?'} />
             </div>
         </div>
     )

@@ -31,28 +31,32 @@ const products = [
 
 ]
 
-export default function socialBlock() {
-    return (
-        <section className="w-full mt-6 pb-10 sm:pb-14 lg:pb-16 xl:pb-20 2xl:pb-36">
-            <div className="container mx-auto">
-                {/* <Title subTitle="services" children="Client centric SaaS product design" className="text-white text-5xl" /> */}
-                <div className="">
-
+const Services = () => {
+  return (
+    <section className="w-full mt-6 pb-10 sm:pb-14 lg:pb-16 xl:pb-20 2xl:pb-36">
+    <div className="container mx-auto">
+        <div className="flex flex-col gap-3 md:max-w-[50%] mx-auto">
+            <span className="text-sm text-[#7e43fb] block max-w-fit font-semibold px-3 py-1 mx-auto rounded-md bg-[#111] shadow-[inset_0_1px_rgba(255,255,255,0.06)]">Work History</span>
+            <h2 className="text-white text-6xl lg:text-[64px] text-center font-medium tracking-tight">Client centric Tailwind <span className="inline-block text-[#ffffff66] mt-2">product design</span></h2>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6 mt-14">
+            {products.map((product) => (
+            <div key={product.id}
+                className="group relative bg-[#1b1b1b] rounded-2xl p-5 md:p-6 lg:p-8 xl:p-10 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)]">
+                <div className="w-12 h-12 md:w-14 md:h-14 xl:w-20 xl:h-20 overflow-hidden rounded-full bg-[#161616] flex justify-center items-center shadow-[inset_0_1px_rgba(255,255,255,0.06)] p-2 2xl:p-5">
+                    {product.imageSrc}
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6 mt-14">
-                    {products.map((product) => (
-                        <div key={product.id} className="group relative bg-[#1b1b1b] rounded-2xl p-5 md:p-6 lg:p-8 xl:p-10 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)]">
-                            <div className="w-12 h-12 md:w-14 md:h-14 xl:w-20 xl:h-20 overflow-hidden rounded-full bg-[#161616] flex justify-center items-center shadow-[inset_0_1px_rgba(255,255,255,0.06)] p-2">
-                                {product.imageSrc}
-                            </div>
-                            <div className="mt-3 sm:mt-4 md:mt-6 xl:mt-8">
-                                <h3 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl text-white mb-2 md:mb-4 font-medium">{product.name}</h3>
-                                <p className="text-sm sm:text-base lg:text-lg text-[#ffffff99]">{product.discription}</p>
-                            </div>
-                        </div>
-                    ))}
+                <div className="mt-3 sm:mt-4 md:mt-6 xl:mt-8">
+                    <h3 className="text-lg sm:text-xl lg:text-2xl xl:text-3xl text-white mb-2 md:mb-4 font-medium">
+                        {product.name}</h3>
+                    <p className="text-sm sm:text-base lg:text-lg text-[#ffffff99]">{product.discription}</p>
                 </div>
             </div>
-        </section>
-    );
+            ))}
+        </div>
+    </div>
+</section>
+  )
 }
+
+export default Services

@@ -7,9 +7,9 @@ const WorkHistory = () => {
   return (
     <div className="lg:pb-28 2xl:pb-36">
         <div className="container mx-auto">
-            <div className="max-w-2xl flex flex-col gap-3 mb-14">
-                <span className="text-[#ffca9a] text-sm block max-w-fit font-semibold px-3 py-1 rounded-md bg-[#111] shadow-[inset_0_1px_rgba(255,255,255,0.06)]">Work History</span>
-                <h2 className="text-white text-5xl font-semibold">Pioneering Web Designer excellence <span className="text-white/40">since 2021</span></h2>
+            <div className="max-w-[60%] mx-auto flex flex-col gap-3 mb-14">
+                <span className="text-[#ffca9a] text-sm block max-w-fit mx-auto font-semibold px-3 py-1 rounded-md bg-[#111] shadow-[inset_0_1px_rgba(255,255,255,0.06)]">Work History</span>
+                <h2 className="text-white text-6xl lg:text-[64px] text-center font-medium tracking-tight">Pioneering Web Designer excellence <span className="text-white/40">since 2021</span></h2>
             </div>
             <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-[#1b1b1b] rounded-2xl p-10 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)]">
@@ -36,7 +36,7 @@ const WorkHistory = () => {
                     </div>
                 </div>
                 <div className="rounded-3xl overflow-hidden">
-                    <Image src="/history-work.jpg" alt="History Work" width={600} height={600} className="max-w-full h-auto" />
+                    <Image src="/history-work.jpg" alt="History Work" width={800} height={600} className="max-w-full h-auto" />
                 </div>
             </div>
         </div>

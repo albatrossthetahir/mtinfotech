@@ -5,9 +5,13 @@ import CallFreeBtn from "../CommenElements/CallFreeBtn"
 const Heighlights = () => {
   return (
     <section className="w-full mt-6 lg:pb-28 2xl:pb-36">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto">
+            <div className="flex flex-col gap-3 justify-center md:max-w-[50%] mx-auto mb-7 sm:mb-8 md:mb-10">
+                <span className="text-sm text-cyan-400 block max-w-fit font-semibold px-3 py-1 mx-auto rounded-md bg-[#111] shadow-[inset_0_1px_rgba(255,255,255,0.06)]">Work History</span>
+                <h2 className="text-white text-6xl lg:text-[64px] text-center font-medium tracking-tight">Review of some exemplary <span className="inline-block text-[#ffffff66] mt-2">good works</span></h2>
+            </div>
             <div className="grid md:grid-cols-4 place-content-center gap-4 md:gap-6">
-                <div className="flex flex-col gap-4 sm:max-w-[280px] w-full">
+                <div className="flex flex-col gap-4  w-full">
                     <div className="flex justify-center items-center py-9 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="200" height="73" viewBox="0 0 200 73" fill="none">
                             <g opacity="0.6">
@@ -50,13 +54,13 @@ const Heighlights = () => {
                     </div>
                 </div>
                 <div className="md:col-span-2">
-                    <div className="h-full py-6 sm:py-8 md:pt-10 px-6 sm:px-8 md:px-12 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl">
+                    <div className="h-full py-6 xl:pt-10 px-6 lg::px-12 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl">
                         <p className="text-lg sm:text-xl lg:text-2xl text-white">“We were fortunate to collaborate with Roger Hill on our latest SaaS project, and the experience was nothing short of exceptional. We highly recommend Roger Hill as a talented SaaS product designer."</p>
-                        <h4 className="text-4xl lg:text-6xl text-[#7e43fb] font-medium mb-7 mt-7" > 
+                        <h4 className="text-4xl lg:text-6xl text-[#7e43fb] font-medium my-3 sm:my-5 xl:my-7" > 
                             +230%
                             <span className="block mt-2 text-sm">INCREASE IN CONVERSION RATE</span>
                         </h4>
-                        <div className="flex flex-wrap pt-8 border-t border-t-[rgba(255,255,255,0.06)]">
+                        <div className="flex flex-wrap pt-6 xl:pt-8 border-t border-t-[rgba(255,255,255,0.06)]">
                             <div className="w-14 h-14 rounded-full bg-white flex-shrink-0 me-4">
                                 <Image src="/heighlights.svg" width={100} height={100} alt="David Gutta" />
                             </div>
@@ -67,7 +71,7 @@ const Heighlights = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col gap-4 sm:max-w-[280px] w-full">
+                <div className="flex flex-col gap-4  w-full">
                     <div className="flex justify-center items-center py-9 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl cursor-pointer">
                         <svg xmlns="http://www.w3.org/2000/svg" width="200" height="73" viewBox="0 0 200 73" fill="none">
                             <g opacity="0.6">

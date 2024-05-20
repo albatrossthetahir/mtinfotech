@@ -2,7 +2,7 @@
 
 export default function socialBlock() {
     return (
-        <section className="w-full mt-6 pb-10 sm:pb-14 lg:pb-16 xl:pb-20 2xl:pb-36">
+        <section className="w-full mt-6 pb-10 sm:pb-14 lg:pb-16 xl:pb-20 2xl:pb-36 container mx-auto">
             <div className="grid lg:grid-cols-5 md:grid-cols-3 justify-center gap-6">
                 <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
                     <div className="lg:w-10 lg:h-10 md:w-8 md:h-8 flex-shrink-0">
