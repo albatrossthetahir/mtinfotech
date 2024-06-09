@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import logo from "../../public/logo.svg"
 
 export default function Header({id}) {
     const navLinks = [
@@ -23,7 +24,7 @@ export default function Header({id}) {
                 <nav className="flex items-center justify-between">
                     {/* Logo */}
                     <Link href={'/'} className="text-xl font-bold">
-                        <Image src="https://flowbite.com/docs/images/logo.svg" width={50} height={52} className="max-w-full" alt="Logo" />
+                        <Image src={logo} width={45} height={45} className="max-w-full" alt="Logo" />
                     </Link>
 
                     {/* Menu Items */}
