@@ -8,7 +8,7 @@ const WorkHistory = () => {
     <div className="lg:pb-28 2xl:pb-36">
         <div className="container mx-auto">
             <div className="max-w-[60%] mx-auto flex flex-col gap-3 mb-14">
-                <span className="text-[#ffca9a] text-sm block max-w-fit mx-auto font-semibold px-3 py-1 rounded-md bg-[#111] shadow-[inset_0_1px_rgba(255,255,255,0.06)]">Work History</span>
+                <span className="text-[#ffca9a] text-sm block max-w-3xl mx-auto font-semibold px-3 py-1 rounded-md bg-[#111] shadow-[inset_0_1px_rgba(255,255,255,0.06)]">Work History</span>
                 <h2 className="text-white text-6xl lg:text-[64px] text-center font-medium tracking-tight">Pioneering Web Designer excellence <span className="text-white/40">since 2021</span></h2>
             </div>
             <div className="grid md:grid-cols-2 gap-6">

@@ -7,7 +7,7 @@ import logo from "../../public/logo.svg"
 export default function Header({id}) {
     const navLinks = [
         { name: "Home", link: "/" },
-        { name: "About me", link: "/" },
+        { name: "About me", link: "/about" },
         { name: "skills", link: "/" },
         { name: "Projects", link: "/" },
         { name: "Contact Me", link: "/" },
@@ -32,7 +32,7 @@ export default function Header({id}) {
                         {
                             navLinks.map((Links) => (
                                 <li key={Links.name}>
-                                    <Link href={Links.name} className="text-white block hover:opacity-50 transition-all duration-300 capitalize">{Links.name}</Link>
+                                    <Link href={Links.link} className="text-white block hover:opacity-50 transition-all duration-300 capitalize">{Links.name}</Link>
                                 </li>
                             ))
                         }
