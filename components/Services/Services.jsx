@@ -34,7 +34,7 @@ const products = [
 const Services = () => {
   return (
     <section className="w-full mt-6 pb-10 sm:pb-14 lg:pb-16 xl:pb-20 2xl:pb-36">
-    <div className="container mx-auto">
+    <div className="container mx-auto lg:px-0">
         <div className="flex flex-col gap-3 md:max-w-[50%] mx-auto">
             <span className="text-sm text-[#7e43fb] block max-w-fit font-semibold px-3 py-1 mx-auto rounded-md bg-[#111] shadow-[inset_0_1px_rgba(255,255,255,0.06)]">Work History</span>
             <h2 className="text-white text-6xl lg:text-[64px] text-center font-medium tracking-tight">Client centric Tailwind <span className="inline-block text-[#ffffff66] mt-2">product design</span></h2>
