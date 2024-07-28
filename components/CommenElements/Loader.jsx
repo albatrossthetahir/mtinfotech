@@ -18,13 +18,7 @@ const Loader = () => {
     }, [index]);
 
     return (
-        <motion.div variants={slideUp} initial="initial" exit={"exit"} className="fixed top-0 left-0 z-50 h-screen w-screen bg-black text-white grid place-items-center">
-            {/* <ul className='flex items-center gap-6'>
-                {
-                    helloList?.map((res, i) => <li key={i} className={`text-xl text-white font-bold whitespace-nowrap ${isHelloList ? "block" : "hidden"}`}>{res.helloEl}</li>
-                    )
-                }
-            </ul> */}
+        <motion.div variants={slideUp} initial="initial" exit={"exit"} className="fixed top-0 left-0 z-50 h-[100dvh] w-[100dvw] bg-black text-white flex items-center justify-center">
             <p className='text-3xl xl:text-4xl 2xl:text-6xl text-white font-bold whitespace-nowrap'>{words[index]}</p>
         </motion.div>
     )

@@ -7,8 +7,10 @@ import WorkHistory from "../../components/WorkHistory/WorkHistory.jsx";
 import Faq from "../../components/FAQ/index.jsx";
 import Loader from "../../components/CommenElements/Loader.jsx";
 import { useEffect, useState } from "react";
-import { AnimatePresence } from "framer-motion";
-
+import { AnimatePresence, useTransform, useScroll, motion } from "framer-motion";
+import Lenis from 'lenis';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -17,10 +19,18 @@ export default function Home() {
     setTimeout(() => {
       setIsLoading(false);
       document.body.style.cursor = 'default';
-      if(!isLoading){
-        document.body.style.overflow = 'hidden';
-      }
+      // document.body.style.overflow = 'hidden';
+      
     }, 2000);
+
+
+    const lenis = new Lenis();
+    lenis.on('scroll', ScrollTrigger.update)
+    gsap.ticker.add((time)=>{
+      lenis.raf(time * 1000)
+    });
+    gsap.ticker.lagSmoothing(0);
+
   }, []);
   return (
     <main>
