@@ -4,11 +4,11 @@ import Image from 'next/image'
 
 const HeroBanner = () => {
   return (
-    <section className="w-full mt-6 container mx-auto lg:px-0">
+    <section className="w-full mt-6 container mx-auto">
       <div className="grid lg:grid-cols-2 gap-3 sm:gap-5 lg:gap-6">
         <div className="shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl py-4 grid place-items-center">
           <div className='relative'>
-            <Image src="/hero-bg-pattern.svg" width={396} height={396} className='loader block max-w-[396px]' alt="heri pattern" />
+            <Image src="/hero-bg-pattern.svg" width={396} height={396} className='loader block w-full sm:w-auto max-w-[396px]' alt="heri pattern" />
             <Image src="/user-img.svg" className='absolute rounded-full top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-72 h-72' width={328} height={328} alt="heri pattern" />
           </div>
         </div>

@@ -16,7 +16,10 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-      document.body.style.cursor = 'default'
+      document.body.style.cursor = 'default';
+      if(!isLoading){
+        document.body.style.overflow = 'hidden';
+      }
     }, 2000);
   }, []);
   return (
