@@ -90,7 +90,7 @@ export default function socialBlock() {
                 </marquee>
                 <marquee behavior="smooth" direction="right">
                     
-                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
+                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 mr-4 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
                         <div className="lg:w-9 lg:h-9 md:w-6 md:h-6 flex-shrink-0">
                             <Image src={'/twitter-icon.svg'} width={40} height={40} className="block max-w-full h-auto opacity-40" alt="twitter" />
                         </div>
@@ -98,7 +98,7 @@ export default function socialBlock() {
                             <h4 className="lg:text-xl md:text-lg text-white opacity-40">Twitter</h4>
                         </div>
                     </div>
-                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
+                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 mr-4 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
                         <div className="lg:w-9 lg:h-9 md:w-6 md:h-6 flex-shrink-0">
                             <Image src={'/behance-icon.svg'} width={40} height={40} className="block max-w-full h-auto opacity-40" alt="Behance" />
                         </div>
@@ -106,7 +106,7 @@ export default function socialBlock() {
                             <h4 className="lg:text-xl md:text-lg text-white opacity-40">Behance</h4>
                         </div>
                     </div>
-                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
+                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 mr-4 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
                         <div className="lg:w-9 lg:h-9 md:w-6 md:h-6 flex-shrink-0">
                             <Image src={'/dribbble-icon.svg'} width={40} height={40} className="block max-w-full h-auto opacity-40" alt="dribbble" />
                         </div>
@@ -114,7 +114,7 @@ export default function socialBlock() {
                             <h4 className="lg:text-xl md:text-lg text-white opacity-40">Dribbble</h4>
                         </div>
                     </div>
-                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
+                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 mr-4 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
                         <div className="lg:w-9 lg:h-9 md:w-6 md:h-6 flex-shrink-0">
                             <Image src={'/instagram-icon.svg'} width={40} height={40} className="block max-w-full h-auto opacity-40" alt="instagram" />
                         </div>
@@ -122,7 +122,7 @@ export default function socialBlock() {
                             <h4 className="lg:text-xl md:text-lg text-white opacity-40">Instagram</h4>
                         </div>
                     </div>
-                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
+                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 mr-4 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
                         <div className="lg:w-9 lg:h-9 md:w-6 md:h-6 flex-shrink-0">
                             <Image src={'/linkdin-icon.svg'} width={40} height={40} className="block max-w-full h-auto opacity-40" alt="linkdin" />
                         </div>
@@ -130,7 +130,7 @@ export default function socialBlock() {
                             <h4 className="lg:text-xl md:text-lg text-white opacity-40">Linkedin</h4>
                         </div>
                     </div>
-                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
+                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 mr-4 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
                         <div className="lg:w-9 lg:h-9 md:w-6 md:h-6 flex-shrink-0">
                             <Image src={'/twitter-icon.svg'} width={40} height={40} className="block max-w-full h-auto opacity-40" alt="twitter" />
                         </div>
@@ -138,7 +138,7 @@ export default function socialBlock() {
                             <h4 className="lg:text-xl md:text-lg text-white opacity-40">Twitter</h4>
                         </div>
                     </div>
-                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
+                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 mr-4 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
                         <div className="lg:w-9 lg:h-9 md:w-6 md:h-6 flex-shrink-0">
                             <Image src={'/behance-icon.svg'} width={40} height={40} className="block max-w-full h-auto opacity-40" alt="Behance" />
                         </div>
@@ -146,7 +146,7 @@ export default function socialBlock() {
                             <h4 className="lg:text-xl md:text-lg text-white opacity-40">Behance</h4>
                         </div>
                     </div>
-                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
+                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 mr-4 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
                         <div className="lg:w-9 lg:h-9 md:w-6 md:h-6 flex-shrink-0">
                             <Image src={'/dribbble-icon.svg'} width={40} height={40} className="block max-w-full h-auto opacity-40" alt="dribbble" />
                         </div>
@@ -154,7 +154,7 @@ export default function socialBlock() {
                             <h4 className="lg:text-xl md:text-lg text-white opacity-40">Dribbble</h4>
                         </div>
                     </div>
-                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
+                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 mr-4 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
                         <div className="lg:w-9 lg:h-9 md:w-6 md:h-6 flex-shrink-0">
                             <Image src={'/instagram-icon.svg'} width={40} height={40} className="block max-w-full h-auto opacity-40" alt="instagram" />
                         </div>
@@ -162,7 +162,7 @@ export default function socialBlock() {
                             <h4 className="lg:text-xl md:text-lg text-white opacity-40">Instagram</h4>
                         </div>
                     </div>
-                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
+                    <div className="text-white shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl lg:py-6 md:py-5 px-5 min-w-52 mr-4 inline-flex flex-wrap flex-row justify-center items-center hover:bg-[#242424] cursor-pointer transition-all duration-300 ease-linear">
                         <div className="lg:w-9 lg:h-9 md:w-6 md:h-6 flex-shrink-0">
                             <Image src={'/linkdin-icon.svg'} width={40} height={40} className="block max-w-full h-auto opacity-40" alt="linkdin" />
                         </div>
