@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import logo from "../../public/logo.svg"
 
 export default function Header({id}) {
@@ -13,14 +13,28 @@ export default function Header({id}) {
         { name: "Contact Me", link: "/" },
     ];
     const [optionalLink, setoptionalLink] = useState(false);
+    const ulref = useRef(null);
 
     const openMenu = ()=>{
         optionalLink? document.body.classList.remove('overflow-hidden') : document.body.classList.add('overflow-hidden')
     }
 
+    useEffect(() => {
+        const handleOutsideClick = (event) => {
+          if (ulref.current && !ulref.current.contains(event.target) && optionalLink) {
+            setoptionalLink(false);
+          }
+        };
+        document.addEventListener("click", handleOutsideClick);
+        return () => {
+          document.removeEventListener("click", handleOutsideClick);
+        };
+    }, [optionalLink]);
+    
+
     return (
-        <header className="">
-            <div className="container mx-auto w-full py-3 lg:py-5 px-8 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl ">
+        <header className="site-header">
+            <div className="container mx-auto w-full py-3 lg:py-5 px-8 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl">
                 <nav className="flex items-center justify-between">
                     {/* Logo */}
                     <Link href={'/'} className="text-xl font-bold">
@@ -28,7 +42,7 @@ export default function Header({id}) {
                     </Link>
 
                     {/* Menu Items */}
-                    <ul className={`flex flex-col lg:flex-row fixed lg:relative top-0 lg:top-auto -left-full lg:left-auto bg-[#1b1b1b] lg:space-x-4 ml-auto w-80 z-50 h-screen lg:h-auto lg:w-auto p-8 lg:p-0 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] lg:shadow-none rounded-xl transition-all duration-300 ease-in-out ${optionalLink ? "left-0 opacity-100" : "opacity-0 lg:opacity-100"}`}>
+                    <ul ref={ulref} className={`flex flex-col lg:items-center lg:flex-row fixed lg:relative top-0 lg:top-auto -left-full lg:left-auto bg-[#1b1b1b] lg:space-x-4 ml-auto w-80 z-50 h-screen lg:h-auto lg:w-auto p-8 lg:p-0 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] lg:shadow-none xl:rounded-xl rounded-tr-xl rounded-br-xl transition-all duration-300 ease-in-out ${optionalLink ? "left-0 opacity-100" : "opacity-0 lg:opacity-100"}`}>
                         {
                             navLinks.map((Links) => (
                                 <li key={Links.name}>

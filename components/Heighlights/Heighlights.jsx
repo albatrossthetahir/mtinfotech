@@ -5,7 +5,7 @@ import Headings from "../Headings"
 
 const Heighlights = () => {
   return (
-    <section className="w-full mt-6 lg:pb-28 2xl:pb-36">
+    <section className="w-full mt-6 pb-10 md:pb-20 lg:pb-28 2xl:pb-36">
         <div className="container mx-auto lg:px-0">
             <div className="flex flex-col gap-3 justify-center md:max-w-[50%] mx-auto mb-7 sm:mb-8 md:mb-10">
             <Headings subTitleClassName={"text-cyan-400"} subTitle={"Heighlights"} title={"Review of some exemplary"} innerTitle={"good works"} />
@@ -55,7 +55,7 @@ const Heighlights = () => {
                 </div>
                 <div className="md:col-span-2">
                     <div className="h-full py-6 xl:pt-10 px-6 lg::px-12 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl">
-                        <p className="text-lg sm:text-xl lg:text-2xl text-white">“We were fortunate to collaborate with Roger Hill on our latest SaaS project, and the experience was nothing short of exceptional. We highly recommend Roger Hill as a talented SaaS product designer."</p>
+                        <p className="text-lg md:text-xl lg:text-2xl text-white">“We were fortunate to collaborate with Roger Hill on our latest SaaS project, and the experience was nothing short of exceptional. We highly recommend Roger Hill as a talented SaaS product designer."</p>
                         <h4 className="text-4xl lg:text-6xl text-[#7e43fb] font-medium my-3 sm:my-5 xl:my-7" > 
                             +230%
                             <span className="block mt-2 text-sm">INCREASE IN CONVERSION RATE</span>

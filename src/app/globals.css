@@ -99,9 +99,13 @@ body {
 
 .commen-shadow-inner{box-shadow:  0 1px rgba(255, 255, 255, .06);}
 
-
 @media(min-width: 1537px){
   .container{
     max-width: 1328px;
   }
+}
+
+@media(min-width: 1199px){
+  .site-header nav ul li:last-child a{background-color: #242424;color: #fff;border-radius: 100px;padding: 8px 21px;font-size: 16px;font-weight: 500;line-height: 24px;}
+
 }
