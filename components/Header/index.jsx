@@ -23,6 +23,7 @@ export default function Header({id}) {
         const handleOutsideClick = (event) => {
           if (ulref.current && !ulref.current.contains(event.target) && optionalLink) {
             setoptionalLink(false);
+            document.body.classList.remove('overflow-hidden')
           }
         };
         document.addEventListener("click", handleOutsideClick);
