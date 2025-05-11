@@ -10,7 +10,7 @@ export default function Header({id}) {
         { name: "About me", link: "/about" },
         { name: "skills", link: "/" },
         { name: "Projects", link: "/" },
-        { name: "Contact Me", link: "/" },
+        { name: "Contact Me", link: "/contact" },
     ];
     const [optionalLink, setoptionalLink] = useState(false);
     const ulref = useRef(null);
