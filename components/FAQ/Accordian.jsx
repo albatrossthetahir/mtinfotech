@@ -10,10 +10,8 @@ export default function Accordian({title, answer}) {
                 <span className="text-white text-left font-medium text-sm sm:text-base md:text-lg lg:text-xl">{title}</span>
                 {accodianOpen ? <span className="text-white text-base w-3 h-3">-</span> : <span className="text-white w-3 h-3 text-base">+</span>}
             </button>
-            <div className={`grid overflow-hidden transition-all duration-300 ease-in-out text-white ${accodianOpen ? "grid-rows-[1fr] opacity-100 pt-4 sm:pt-5 mt:pt-6" : "grid-rows-[0fr] opacity-0"
-                }`
-            }>
-                <p className="overflow-hidden font-normal text-sm sm:text-base md:text-lg lg:text-xl">{answer}</p>
+            <div className={`grid overflow-hidden transition-all duration-300 ease-in-out text-white ${accodianOpen ? "grid-rows-[1fr] opacity-100 pt-4 sm:pt-5 mt:pt-6" : "grid-rows-[0fr] opacity-0"}`}>
+                <p className="overflow-hidden font-normal text-sm md:text-base">{answer}</p>
             </div>
         </div>
     )

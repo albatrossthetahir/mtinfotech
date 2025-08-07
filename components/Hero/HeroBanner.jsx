@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const HeroBanner = () => {
   return (
-    <section className="w-full mt-6 container mx-auto">
+    <section className="w-full mt-6 container mx-auto relative z-10">
       <div className="grid lg:grid-cols-2 gap-3 sm:gap-5 lg:gap-6">
         <div className="shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl py-4 grid place-items-center">
           <div className='relative overflow-hidden'>

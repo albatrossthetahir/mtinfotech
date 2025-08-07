@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import logo from "../../public/logo.svg"
+import { cn } from "@/lib/utils";
 
 export default function Header({id}) {
     const navLinks = [
@@ -34,16 +35,16 @@ export default function Header({id}) {
     
 
     return (
-        <header className="site-header">
-            <div className="container mx-auto w-full py-3 lg:py-5 px-8 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl">
+        <header className="site-header relative lg:sticky w-full lg:top-10 z-20 lg:z-50 transition-all duration-300 ease-linear">
+            <div className="container mx-auto w-full py-3 lg:py-5 px-8 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] bg-[#000000]/5 backdrop-blur-lg rounded-xl">
                 <nav className="flex items-center justify-between">
                     {/* Logo */}
-                    <Link href={'/'} className="text-xl font-bold">
-                        <Image src={logo} width={45} height={45} className="max-w-full" alt="Logo" />
+                    <Link href={'/'} className="text-xl font-bold text-white">
+                        The Tahir Art
                     </Link>
 
                     {/* Menu Items */}
-                    <ul ref={ulref} className={`flex flex-col lg:items-center lg:flex-row fixed lg:relative top-0 lg:top-auto -left-full lg:left-auto bg-[#1b1b1b] lg:space-x-4 ml-auto w-80 z-50 h-screen lg:h-auto lg:w-auto p-8 lg:p-0 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] lg:shadow-none xl:rounded-xl rounded-tr-xl rounded-br-xl transition-all duration-300 ease-in-out ${optionalLink ? "left-0 opacity-100" : "opacity-0 lg:opacity-100"}`}>
+                    <ul ref={ulref} className={cn("flex flex-col lg:items-center lg:flex-row fixed lg:relative top-0 lg:top-auto lg:left-auto lg:bg-transparent bg-[#1b1b1b] lg:space-x-4 ml-auto w-80 z-50 h-screen lg:h-auto lg:w-auto p-8 lg:p-0 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] lg:shadow-none xl:rounded-xl rounded-tr-xl rounded-br-xl transition-all duration-300 ease-in-out", optionalLink ? "left-0 opacity-100" : "-left-full opacity-0 lg:opacity-100")}>
                         {
                             navLinks.map((Links) => (
                                 <li key={Links.name}>
