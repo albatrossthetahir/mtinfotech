@@ -9,7 +9,7 @@ const HeroBanner = () => {
         <div className="shadow-[inset_0_1px_0_0_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl py-4 grid place-items-center">
           <div className='relative overflow-hidden'>
             <Image src="/hero-bg-pattern.svg" width={396} height={396} className='loader block w-full md:w-auto max-w-[396px]' alt="heri pattern" />
-            <Image src="/user-img.svg" className='absolute rounded-full top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-full md:w-auto max-w-[270px] md:max-w-[328px]' width={328} height={328} alt="heri pattern" />
+            <Image src="/user-img.png" className='absolute rounded-full top-2/4 left-2/4 -translate-x-2/4 -translate-y-2/4 w-full md:w-auto max-w-[270px] md:max-w-[328px]' width={328} height={328} alt="heri pattern" />
           </div>
         </div>
         <div className="text-center shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] rounded-xl px-4 py-14 sm:py-20 md:py-24 lg:py-32">

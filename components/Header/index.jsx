@@ -39,7 +39,7 @@ export default function Header({id}) {
             <div className="container mx-auto w-full py-3 lg:py-5 px-8 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.06)] bg-[#000000]/5 backdrop-blur-lg rounded-xl">
                 <nav className="flex items-center justify-between">
                     {/* Logo */}
-                    <Link href={'/'} className="text-xl font-bold text-white">Tahir's Art</Link>
+                    <Link href={'/'} className="text-xl font-bold text-white">Tahir's Portfolio</Link>
 
                     {/* Menu Items */}
                     <ul ref={ulref} className={cn("flex flex-col lg:items-center lg:flex-row fixed lg:relative top-0 lg:top-auto lg:left-auto lg:bg-transparent bg-[#1b1b1b] lg:space-x-4 ml-auto w-80 z-50 h-screen lg:h-auto lg:w-auto p-8 lg:p-0 shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] lg:shadow-none xl:rounded-xl rounded-tr-xl rounded-br-xl transition-all duration-300 ease-in-out", optionalLink ? "left-0 opacity-100" : "-left-full opacity-0 lg:opacity-100")}>

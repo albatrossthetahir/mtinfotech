@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="w-full md:w-2/5 lg:w-96 flex-grow lg:flex-grow-0 transition-all duration-200 ease-linear">
                 <div className="2xl:pt-28 pt-24 px-10 pb-12 relative shadow-[inset_0_1px_0_1px_rgba(255,255,255,0.06)] bg-[#1b1b1b] text-center rounded-2xl flex-grow transition-all duration-200 ease-linear">
                     <div className="w-32 h-32 overflow-hidden absolute -top-1/4 bottom-auto left-[36%] rounded-full bg-white mx-auto">
-                        <Image src="/tahir-pic.jpg" width={150} height={150} alt="tahir image" />
+                        <Image src="/user-img.png" width={150} height={150} alt="tahir image" />
                     </div>
                     <h3 className="2xl:text-4xl lg:text-3xl text-2xl text-white mb-4 font-medium">K. Tahir</h3>
                     <p className="2xl:text-xl xl:text-lg text-base leading-normal text-white">I believe in the power of design to transform ideas into tangible, user-friendly software.</p>
